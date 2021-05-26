@@ -1,4 +1,10 @@
 <p align="center">
+  <img src="design/crev_logo.svg" alt="cargo-crev" width="120" height="120" />
+</p>
+
+<h1 align="center">cargo-crev</h1>
+
+<p align="center">
   <a href="https://travis-ci.org/crev-dev/cargo-crev">
       <img src="https://img.shields.io/travis/crev-dev/cargo-crev/master.svg?style=flat-square" alt="Travis CI Build Status">
   </a>
@@ -14,7 +20,12 @@
   <br>
 </p>
 
-![jesus, that's a lot of unsafe](https://i.imgur.com/nunWPxF.jpg)
+<p align="center">🔑 Cryptographically verifiable, distributed, dependency reviews. 🔍</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/nunWPxF.jpg">
+  </a>
+</p>
 
 # cargo-crev
 
