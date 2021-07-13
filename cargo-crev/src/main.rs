@@ -755,7 +755,7 @@ fn set_trust_level_for_ids(
     let local = ensure_crev_id_exists_or_make_one()?;
     let unlocked_id = local.read_current_unlocked_id(&term::read_passphrase)?;
 
-    let trust = local.build_trust_proof(unlocked_id.as_public_id(), ids.to_vec(), trust_level)?;
+    let mut trust = local.build_trust_proof(unlocked_id.as_public_id(), ids.to_vec(), trust_level)?;
 
     if edit_interactively {
         let extra_comment = if trust_level == TrustLevel::Distrust {
@@ -763,7 +763,7 @@ fn set_trust_level_for_ids(
         } else {
             None
         };
-        edit::edit_proof_content_iteractively(&trust, None, None, extra_comment)?;
+        trust = edit::edit_proof_content_iteractively(&trust, None, None, extra_comment)?;
     }
 
     let proof = trust.sign_by(&unlocked_id)?;

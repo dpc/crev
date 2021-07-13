@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic
 Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+- Fix interactive use of `trust` and `id trust` to actually read the proofs edited
+
 ## [0.21.1](https://github.com/dpc/crev/compare/cargo-crev-v0.18.0...cargo-crev-v0.21.0) - 2020-05-29
 
 - Lots of minor improvements
